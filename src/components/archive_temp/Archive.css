@@ -1,0 +1,43 @@
+.archieve-wrap{
+    display: flex;
+    justify-content: center;
+}
+.archieve{
+    width: 1000px;
+}
+.archieve h1 {
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0.08em;
+    font-weight: 100;
+}
+
+.archieve h2 {
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0.08em;
+    font-weight: 100;
+}
+
+.archieve img {
+    display: block;
+    width: 1000px;
+}
+
+.archieve ul {
+    
+    font-size: 13px;
+    list-style:disc;
+}
+
+.archieve p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+/* From markdown */
+.appendix {
+    color:red;
+}

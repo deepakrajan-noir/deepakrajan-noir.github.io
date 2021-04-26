@@ -1,0 +1,25 @@
+:root {
+  --background-color:#040404;
+  --foreground-color: #F2F2F2;  
+  --foreground-grey: #909090;
+  --purple: #7C6D94;
+  font-family: Inter;
+}
+
+* {
+  margin:0px;
+  padding:0px;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* scroll-behaviour: smooth; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

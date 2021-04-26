@@ -1,0 +1,16 @@
+.home {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 0.6px;
+}
+
+.home h3{
+    font-size: 80px;
+    text-shadow:   
+    -1.5px 0px 0px #1AD7E0,
+    -3px 0px 0px #0D10DC,
+     1.5px 0px 0px #d68010 ,
+     3px 0px 0px #CB0C0C;
+}

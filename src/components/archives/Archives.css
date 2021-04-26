@@ -1,0 +1,124 @@
+.row,
+.row-reverse {
+  display: grid;
+  grid-template-rows: [heading] auto [content] auto [end];
+  grid-template-columns: [left] 50% [right] 50% [end];
+    padding-bottom: 40px;
+}
+
+.row .heading,
+.row-reverse .heading {
+  grid-row: heading / content;
+}
+
+.row .heading {
+  grid-column: left / right;
+}
+
+.row-reverse .heading {
+  grid-column: right / end;
+}
+
+.row .left,
+.row .right,
+.row-reverse .left,
+.row-reverse .right {
+  grid-row: content / end;
+}
+
+.row .left {
+  grid-column: left / right;
+}
+
+.row .right {
+  grid-column: right / end;
+}
+
+.row-reverse .left {
+  grid-column: right / end;
+}
+
+.row-reverse .right {
+  grid-column: left / right;
+}
+
+.left img {
+    width: 510px;
+    height: 262px;
+    transition: 0.5s all ease-in-out;
+    object-fit: cover;
+}
+
+.right img {
+    /* width: 510px; */
+    transition: 0.5s all ease-in-out;
+    object-fit: cover;
+}
+.archive-heading{
+    font-size: 25px;
+    max-width: 600px;
+    letter-spacing: 2px;
+    transition: 0.5s all ease-in-out;
+    padding-bottom: 16px;
+}
+
+
+.archive-heading b {
+    font-weight: 800;
+    transition: 0.5s all ease-in-out;
+}
+
+.archive-date{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 200;
+    padding-bottom:16px; 
+}
+.archive-content {
+    display: grid;
+    grid-template-rows: 262px;
+    place-items: center;
+}
+.archive-content p {
+    font-size:12px;
+    font-weight: 200;
+    letter-spacing: 0.5px; 
+    padding:  0px 80px;
+}  
+
+.row:hover,
+.row-reverse:hover{
+    cursor: pointer;
+}
+
+.row:hover img{
+
+    transform: scale(1.1);
+}
+
+.row-reverse:hover img{
+
+    transform: scale(1.1);
+}
+
+.row:hover .archive-heading b{
+
+    animation: chroma_1  ease-in 0.2s normal forwards;
+}
+
+.row-reverse:hover .archive-heading b{
+
+    animation: chroma_1  ease-in 0.2s normal forwards;
+}
+
+@keyframes chroma_1{
+    100%{text-shadow:-1px 0px 0px #1AD7E0, -3px 0px 0px #0D10DC,1px 0px 0px #d68010 ,3px 0px 0px #CB0C0C;}
+    
+}
+
+
+span.p {
+    color:#a98fd1;
+    display: inline;
+}

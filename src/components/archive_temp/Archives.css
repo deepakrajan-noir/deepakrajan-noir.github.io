@@ -1,0 +1,46 @@
+.row,
+.row-reverse {
+  display: grid;
+  grid-template-rows: [heading] auto [content] auto [end];
+  grid-template-columns: [left] 50% [right] 50% [end];
+}
+
+.row .heading,
+.row-reverse .heading {
+  grid-row: heading / content;
+}
+
+.row .heading {
+  grid-column: left / right;
+}
+
+.row-reverse .heading {
+  grid-column: right / end;
+}
+
+.row .left,
+.row .right,
+.row-reverse .left,
+.row-reverse .right {
+  grid-row: content / end;
+}
+
+.row .left {
+  grid-column: left / right;
+}
+
+.row .right {
+  grid-column: right / end;
+}
+
+.row-reverse .left {
+  grid-column: right / end;
+}
+
+.row-reverse .right {
+  grid-column: left / right;
+}
+
+.left img {
+    width: 500px;
+}

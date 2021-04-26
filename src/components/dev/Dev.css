@@ -1,0 +1,25 @@
+.dev-try{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* chromatic aberation */
+.dev-try h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    transition:0.2s ;
+}
+
+.dev-try h1:hover{
+
+    animation: chromatic  ease-in 0.2s normal forwards;
+    cursor: pointer;
+}
+
+
+
+@keyframes chromatic{
+    100%{text-shadow:   -1px 0px 0px #1AD7E0, -2px 0px 0px #0D10DC,1px 0px 0px #d68010 ,2px 0px 0px #CB0C0C;}
+    
+}
